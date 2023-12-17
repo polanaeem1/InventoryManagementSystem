@@ -33,8 +33,8 @@ public class Run {
                         if (op.equals("Add Product")){
                             String name=JOptionPane.showInputDialog("Enter Your Product Name : ");
                             if (!name.isEmpty()){
-                                while (!Validation.validate(userName,namePattern)){
-                                    userName = JOptionPane.showInputDialog("Please Enter only letters \n Product Name:");
+                                while (!Validation.validate(name,namePattern)){
+                                    userName = JOptionPane.showInputDialog("Please Enter only letters \nProduct Name:");
                                 }
                             }else{
                                 while (name.isEmpty()){
@@ -102,7 +102,7 @@ public class Run {
                             Product product=staff.getById(id.trim());
                             String name=JOptionPane.showInputDialog("Enter New Name:");
                             if (!name.isEmpty()){
-                                while (!Validation.validate(userName,namePattern)){
+                                while (!Validation.validate(name,namePattern)){
                                     userName = JOptionPane.showInputDialog("Please Enter only letters \n Product Name:");
                                 }
                             }else{
@@ -158,7 +158,7 @@ public class Run {
                                 OrderFromSupplier orderFromSupplierCommand=new OrderFromSupplier();
                                 String name=JOptionPane.showInputDialog("Enter Your Product Name : ");
                                 if (!name.isEmpty()){
-                                    while (!Validation.validate(userName,namePattern)){
+                                    while (!Validation.validate(name,namePattern)){
                                         userName = JOptionPane.showInputDialog("Please Enter only letters \n Product Name:");
                                     }
                                 }else{
