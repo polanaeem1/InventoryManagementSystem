@@ -34,7 +34,7 @@ public class Run {
                             String name=JOptionPane.showInputDialog("Enter Your Product Name : ");
                             if (!name.isEmpty()){
                                 while (!Validation.validate(name,namePattern)){
-                                    userName = JOptionPane.showInputDialog("Please Enter only letters \nProduct Name:");
+                                    name = JOptionPane.showInputDialog("Please Enter only letters \nProduct Name:");
                                 }
                             }else{
                                 while (name.isEmpty()){
@@ -103,7 +103,7 @@ public class Run {
                             String name=JOptionPane.showInputDialog("Enter New Name:");
                             if (!name.isEmpty()){
                                 while (!Validation.validate(name,namePattern)){
-                                    userName = JOptionPane.showInputDialog("Please Enter only letters \n Product Name:");
+                                    name = JOptionPane.showInputDialog("Please Enter only letters \n Product Name:");
                                 }
                             }else{
                                 while (name.isEmpty()){
@@ -159,7 +159,7 @@ public class Run {
                                 String name=JOptionPane.showInputDialog("Enter Your Product Name : ");
                                 if (!name.isEmpty()){
                                     while (!Validation.validate(name,namePattern)){
-                                        userName = JOptionPane.showInputDialog("Please Enter only letters \n Product Name:");
+                                        name = JOptionPane.showInputDialog("Please Enter only letters \n Product Name:");
                                     }
                                 }else{
                                     while (name.isEmpty()){
